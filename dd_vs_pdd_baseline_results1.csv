@@ -1,0 +1,15 @@
+Method,Images_Per_Class,Total_Images,Test_Accuracy_Mean,Test_Accuracy_Std,Training_Time_Per_Epoch,Memory_MB
+PDD,50,500,44.79,5.79,0.5657,755.56
+DD (Single-Step),1,10,40.84,1.93,0.1624,762.96
+Real Subset,100,1000,80.94,0.0,0.4069,762.96
+DD (Single-Step),1,10,40.73,1.62,1.1984,532.69
+Real Subset,100,1000,80.94,0.0,0.4052,532.69
+DD (Single-Step),1,10,44.43,8.23,0.0,341.89
+Real Subset,100,1000,82.48,0.0,0.3308,341.89
+DD (Single-Step),10,100,41.5,4.17,0.0,341.95
+Real Subset,100,1000,47.67,0.0,0.239,341.95
+PDD,50,500,44.79,5.79,0.5346,839.59
+DD (Single-Step),10,100,44.9,5.09,0.0,341.94
+Real Subset,100,1000,89.51,0.0,0.3239,341.94
+DD (Single-Step),10,100,44.37,5.14,0.0,342.84
+Real Subset,100,1000,84.52,0.0,0.238,342.84

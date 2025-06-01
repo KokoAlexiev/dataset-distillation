@@ -10,6 +10,8 @@ from basics import task_loss, final_objective_loss, evaluate_steps
 from utils.distributed import broadcast_coalesced, all_reduce_coalesced
 from utils.io import save_results
 
+print("🚀 Script started!")
+
 
 def permute_list(list):
     indices = np.random.permutation(len(list))
@@ -173,7 +175,12 @@ class Trainer(object):
             bwd_out += list(lrs)
             bwd_grad += list(glrs)
             for d, g in zip(datas, gdatas):
+                if d.grad is None:
+                    d.requires_grad = True
+                    d.grad = torch.zeros_like(d)
+
                 d.grad.add_(g)
+
         if len(bwd_out) > 0:
             torch.autograd.backward(bwd_out, bwd_grad)
 
@@ -245,6 +252,9 @@ class Trainer(object):
                 losses.append(l.detach())
                 grad_infos.append(self.backward(model, rdata, rlabel, steps, saved))
                 del l, saved
+            for d in self.state.distilled_images:
+                d.retain_grad()
+
             self.accumulate_grad(grad_infos)
 
             # all reduce if needed

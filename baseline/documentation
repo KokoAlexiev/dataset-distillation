@@ -1,0 +1,6 @@
+Current PDD baseline (CNN)
+
+Methodology: Implements multi-step unrolling, progressive expansion, create_graph=True, real initialization.
+Performance: ~64% test accuracy on MNIST from 500 synthetic images.
+Visuals: Clean and meaningful distilled samples.
+Metrics: Accuracy, memory, time → logged to .csv.

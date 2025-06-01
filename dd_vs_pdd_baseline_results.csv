@@ -1,0 +1,34 @@
+Method,Images_Per_Class,Total_Images,Test_Accuracy_Mean,Test_Accuracy_Std,Training_Time_Per_Epoch,Memory_MB,Architecture
+PDD,50,500,66.33,1.64,0.5583,839.69,
+PDD → Transformer,varies,500,21.28,5.38,0.6765,1093.92,
+Real Subset,100,1000,39.82,0.0,1.3345,905.6,Transformer
+DD (Single-Step),1,10,22.05,2.99,0.01,357.07,CNN
+Real Subset,1,10,42.53,0.0,0.0052,357.07,CNN
+DD (Single-Step),1,10,15.13,2.86,0.007,356.89,CNN
+Real Subset,1,10,29.92,0.0,0.0046,356.89,CNN
+DD (Single-Step),1,10,16.13,2.99,0.008,359.49,CNN
+Real Subset,1,10,29.87,0.0,0.0052,359.49,CNN
+DD (Single-Step),1,10,30.39,4.07,0.009,356.89,CNN
+Real Subset,1,10,29.87,0.0,0.0054,356.89,CNN
+DD (Single-Step),1,10,24.37,12.68,0.007,355.71,CNN
+Real Subset,1,10,38.94,0.0,0.0038,355.71,CNN
+DD (Single-Step),1,10,24.37,12.68,0.006,355.69,CNN
+Real Subset,1,10,38.94,0.0,0.0042,355.69,CNN
+DD (Single-Step),5,50,15.96,1.47,0.014,378.82,CNN
+Real Subset,5,50,65.15,0.0,0.007,378.82,CNN
+DD (Single-Step),1,10,24.37,12.68,0.008,356.14,CNN
+Real Subset,1,10,38.94,0.0,0.0056,356.14,CNN
+DD (Single-Step),1,10,30.39,4.07,0.009,356.81,CNN
+Real Subset,1,10,29.87,0.0,0.0062,356.81,CNN
+DD (Single-Step),1,10,30.39,4.07,0.008,357.4,CNN
+Real Subset,1,10,29.87,0.0,0.007,357.4,CNN
+DD (Single-Step),1,10,30.39,4.07,0.0458,357.61,CNN
+Real Subset,1,10,29.87,0.0,0.0058,357.61,CNN
+PDD,50,500,66.07,1.06,0.5872,781.1,
+PDD → Transformer,varies,500,21.28,5.38,0.6641,1231.99,
+DD (Single-Step),1,10,40.84,1.93,0.1515,408.75,
+Real Subset,100,1000,80.94,0.0,0.3622,408.75,
+DD (Single-Step),1,10,40.84,1.93,0.1336,760.46,
+Real Subset,100,1000,80.94,0.0,0.2843,760.46,
+DD (Single-Step),1,10,40.84,1.93,0.1744,442.57,
+Real Subset,100,1000,80.94,0.0,0.4013,442.57,
